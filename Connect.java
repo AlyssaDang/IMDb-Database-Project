@@ -29,8 +29,6 @@ public class Connect
 		   String search = mainWindow.getSearch();
 		   String category = mainWindow.getCategory();
 		   
-		   //stmt = conn.createStatement();
-
 		   conn.close();
 		
 	   }
@@ -64,7 +62,6 @@ public class Connect
 			 se.printStackTrace();
 		  }
 	   }//end try
-	   System.out.println(" Goodbye!");
 	}
 }
 
@@ -73,8 +70,6 @@ class mainFrame implements ActionListener
 	private JFrame frame;
 	private String searchFromBar = "";
 	private String searchCategory = "";
-    //public boolean frameRunning = true;
-    //public boolean searchRunning = true;
     mainFrame() 
     {   
         // creating instance of JFrame with name "Main Window" 
@@ -94,9 +89,9 @@ class mainFrame implements ActionListener
         frame.add(sCategory);
         
         // creates instance of JButton 
-        JButton sButton = new JButton("Search"); 
-        sButton.setBounds(500, 50, 100, 20);
-        sButton.addActionListener(new ActionListener() 
+        JButton searchButton = new JButton("Search"); 
+        searchButton.setBounds(500, 50, 100, 20);
+        searchButton.addActionListener(new ActionListener() 
         {
             @Override
             public void actionPerformed(ActionEvent e) 
@@ -111,7 +106,7 @@ class mainFrame implements ActionListener
                 }
             }
         });
-        frame.add(sButton);
+        frame.add(searchButton);
         
         //creates instance of text
         JLabel label = new JLabel("Search: ");
