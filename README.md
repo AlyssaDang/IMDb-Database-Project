@@ -1,5 +1,7 @@
 # IMDb-Database-Project
 
+NOTE: THIS PROJECT HAS BEEN COMPLETED (locally) AND THIS REPOSITORY WILL NO LONGER BE UPDATED
+
 Dataset Link: https://datasets.imdbws.com/
 
 Types of databases: Ones run on your personal computer, ones run on a server (that you own), ones run using a service like AWS
